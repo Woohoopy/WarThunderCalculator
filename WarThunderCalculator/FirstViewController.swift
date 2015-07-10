@@ -26,8 +26,6 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        totalRankLabel.text = "";
-        totalRankNumberLabel.text = "";
     }
 
     override func didReceiveMemoryWarning() {
