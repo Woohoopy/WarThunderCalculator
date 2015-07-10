@@ -40,15 +40,15 @@ class FirstViewController: UIViewController {
         var tres = planeThreeBR.text.toDouble
         
         // Sort values in array of ascending order
-        var brs:[Double] = [uno,dos,tres]
+        var brs:[Double] = [uno, dos, tres]
         brs.sort(<)
         
         // Any planes with BR difference greater than 0.6 should be changed to 0.6 less than the best plane
-        if(brs[2]-brs[1]>0.6){
+        if(brs[2] - brs[1] > 0.6){
             brs[1]=brs[2]-0.6
         }
 
-        if(brs[2]-brs[0]>0.6){
+        if(brs[2] - brs[0] > 0.6){
             brs[0]=brs[2]-0.6
         }
         
