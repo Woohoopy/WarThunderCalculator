@@ -14,6 +14,7 @@
 		520F000D1B4F85E40095B8B8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520F000C1B4F85E40095B8B8 /* Images.xcassets */; };
 		520F00101B4F85E40095B8B8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520F000E1B4F85E40095B8B8 /* LaunchScreen.xib */; };
 		520F001C1B4F85E40095B8B8 /* WarThunderCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520F001B1B4F85E40095B8B8 /* WarThunderCalculatorTests.swift */; };
+		520F00291B4F918F0095B8B8 /* Bf109Image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 520F00281B4F918F0095B8B8 /* Bf109Image.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		520F00151B4F85E40095B8B8 /* WarThunderCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarThunderCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		520F001A1B4F85E40095B8B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		520F001B1B4F85E40095B8B8 /* WarThunderCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarThunderCalculatorTests.swift; sourceTree = "<group>"; };
+		520F00281B4F918F0095B8B8 /* Bf109Image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bf109Image.jpg; sourceTree = "<group>"; };
 		520FFFFE1B4F85E40095B8B8 /* WarThunderCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarThunderCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,7 @@
 				520F00071B4F85E40095B8B8 /* SecondViewController.swift */,
 				520F00091B4F85E40095B8B8 /* Main.storyboard */,
 				520F000C1B4F85E40095B8B8 /* Images.xcassets */,
+				520F00281B4F918F0095B8B8 /* Bf109Image.jpg */,
 				520F000E1B4F85E40095B8B8 /* LaunchScreen.xib */,
 				520F00011B4F85E40095B8B8 /* Supporting Files */,
 			);
@@ -204,6 +207,7 @@
 			files = (
 				520F000B1B4F85E40095B8B8 /* Main.storyboard in Resources */,
 				520F00101B4F85E40095B8B8 /* LaunchScreen.xib in Resources */,
+				520F00291B4F918F0095B8B8 /* Bf109Image.jpg in Resources */,
 				520F000D1B4F85E40095B8B8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
