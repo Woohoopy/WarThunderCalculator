@@ -5,7 +5,7 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--War Thunder-->
+        <!--War Thunder Calculator-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="WarThunderCalculator" customModuleProvider="target" sceneMemberID="viewController">
@@ -42,27 +42,6 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.25" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nga-JW-a6f">
-                                        <rect key="frame" x="125" y="42" width="38" height="30"/>
-                                        <color key="backgroundColor" red="0.92156862745098034" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="38" id="wAc-hx-tj8"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.25" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DXN-b7-N7U">
-                                        <rect key="frame" x="125" y="200" width="38" height="30"/>
-                                        <color key="backgroundColor" red="0.92156862745098034" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="go"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.25" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AMn-sN-Mnf">
-                                        <rect key="frame" x="125" y="120" width="38" height="30"/>
-                                        <color key="backgroundColor" red="0.92156862745098034" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
-                                    </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Vs-f4-O5R">
                                         <rect key="frame" x="370" y="76" width="50" height="52"/>
                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="38"/>
@@ -86,6 +65,30 @@
                                             <action selector="goButtonDidClick:" destination="9pv-A4-QxB" eventType="touchUpInside" id="c38-pW-Uik"/>
                                         </connections>
                                     </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nga-JW-a6f">
+                                        <rect key="frame" x="125" y="42" width="45" height="30"/>
+                                        <color key="backgroundColor" red="0.92156862745098034" green="0.94901960784313721" blue="0.94901960784313721" alpha="0.28999999999999998" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="wAc-hx-tj8"/>
+                                        </constraints>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DXN-b7-N7U">
+                                        <rect key="frame" x="125" y="200" width="45" height="30"/>
+                                        <color key="backgroundColor" red="0.92156862745098034" green="0.94901960784313721" blue="0.94901960784313721" alpha="0.28999999999999998" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="go"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AMn-sN-Mnf">
+                                        <rect key="frame" x="125" y="120" width="45" height="30"/>
+                                        <color key="backgroundColor" red="0.92156862745098034" green="0.94901960784313721" blue="0.94901960784313721" alpha="0.28999999999999998" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -125,7 +128,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
-                    <navigationItem key="navigationItem" title="War Thunder" id="zmb-6V-zIM"/>
+                    <navigationItem key="navigationItem" title="War Thunder Calculator" id="zmb-6V-zIM"/>
                     <connections>
                         <outlet property="goButton" destination="1Rz-5d-iRb" id="nf1-gD-4VT"/>
                         <outlet property="planeOneBR" destination="Nga-JW-a6f" id="LAN-My-oqX"/>
