@@ -58,6 +58,24 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
             
     }
 
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        //Responds to user textbox data entry
+        if textField == planeOneBR {
+            planeTwoBR.becomeFirstResponder()
+            return false;
+        }
+        if textField == planeTwoBR {
+            planeThreeBR.becomeFirstResponder()
+            return false;
+        }
+        if textField == planeThreeBR {
+            planeThreeBR.resignFirstResponder()
+            goButtonDidClick(goButton)
+            return true;
+        }
+        return true;
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
