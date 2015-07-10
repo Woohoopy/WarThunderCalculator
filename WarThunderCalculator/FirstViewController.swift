@@ -14,7 +14,7 @@ extension String {
     }
 }
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var goButton: UIButton!
     @IBOutlet weak var planeOneBR: UITextField!
@@ -26,6 +26,8 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.planeOneBR.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
