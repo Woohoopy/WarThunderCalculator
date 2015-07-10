@@ -33,8 +33,15 @@ class FirstViewController: UIViewController {
         var uno = (planeOneBR.text as NSString).doubleValue
         var dos = (planeTwoBR.text as NSString).doubleValue
         var tres = (planeThreeBR.text as NSString).doubleValue
-        
-        var total = (uno/2)+(dos+tres)/4
+        var brs:[Double] = [uno,dos,tres]
+        brs.sort(<)
+        if(brs[2]-brs[1]>0.6){
+        brs[1]=brs[2]-0.6
+        }
+        if(brs[2]-brs[0]>0.6){
+        brs[0]=brs[2]-0.6
+        }
+        var total = (brs[2]/2)+(brs[0]+brs[1])/4
         totalRankLabel.text = "Total Rank"
         totalRankNumberLabel.text=("\(total)")
         
