@@ -8,6 +8,12 @@
 
 import UIKit
 
+extension String {
+    var toDouble: Double {
+        return (self as NSString).doubleValue
+    }
+}
+
 class FirstViewController: UIViewController {
     
     @IBOutlet weak var goButton: UIButton!
@@ -30,9 +36,9 @@ class FirstViewController: UIViewController {
     }
 
     @IBAction func goButtonDidClick(sender: UIButton) {
-        var uno = (planeOneBR.text as NSString).doubleValue
-        var dos = (planeTwoBR.text as NSString).doubleValue
-        var tres = (planeThreeBR.text as NSString).doubleValue
+        var uno = planeOneBR.text.toDouble
+        var dos = planeTwoBR.text.toDouble
+        var tres = planeThreeBR.text.toDouble
         var brs:[Double] = [uno,dos,tres]
         brs.sort(<)
         if(brs[2]-brs[1]>0.6){
