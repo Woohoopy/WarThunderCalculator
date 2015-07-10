@@ -131,6 +131,7 @@
                         <outlet property="planeOneBR" destination="Nga-JW-a6f" id="LAN-My-oqX"/>
                         <outlet property="planeThreeBR" destination="DXN-b7-N7U" id="QfO-Rx-SZS"/>
                         <outlet property="planeTwoBR" destination="AMn-sN-Mnf" id="eKM-tU-Mj0"/>
+                        <outlet property="totalRankLabel" destination="RSP-gG-jpf" id="9Ix-vJ-1Yy"/>
                         <outlet property="totalRankNumberLabel" destination="4Vs-f4-O5R" id="wlD-0c-sc0"/>
                     </connections>
                 </viewController>
