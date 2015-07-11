@@ -77,6 +77,9 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         self.navigationController!.navigationBar.backgroundColor = UIColor.clearColor().colorWithAlphaComponent(0.4)
         self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Avenir-Light", size: 19)!,NSForegroundColorAttributeName : UIColor.whiteColor()]
         // self.navigationController!.navigationBar.shadowImage = UIImage()
+        // Sets battery and time text to white
+        self.navigationController!.navigationBar.barStyle = UIBarStyle.Black
+        
         
     }
     
