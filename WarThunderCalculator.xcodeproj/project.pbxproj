@@ -15,6 +15,8 @@
 		520F001C1B4F85E40095B8B8 /* WarThunderCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520F001B1B4F85E40095B8B8 /* WarThunderCalculatorTests.swift */; };
 		520F00291B4F918F0095B8B8 /* Bf109Image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 520F00281B4F918F0095B8B8 /* Bf109Image.jpg */; };
 		520F002B1B4FAD4A0095B8B8 /* BomberDarkImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 520F002A1B4FAD4A0095B8B8 /* BomberDarkImage.jpg */; };
+		527291271B50B73000A19F1F /* WarThunderTitlePageImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 527291261B50B73000A19F1F /* WarThunderTitlePageImage.jpg */; };
+		527291291B50B86700A19F1F /* VerticalMustangImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 527291281B50B86700A19F1F /* VerticalMustangImage.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		520F00281B4F918F0095B8B8 /* Bf109Image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bf109Image.jpg; sourceTree = "<group>"; };
 		520F002A1B4FAD4A0095B8B8 /* BomberDarkImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BomberDarkImage.jpg; sourceTree = "<group>"; };
 		520FFFFE1B4F85E40095B8B8 /* WarThunderCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarThunderCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		527291261B50B73000A19F1F /* WarThunderTitlePageImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WarThunderTitlePageImage.jpg; sourceTree = "<group>"; };
+		527291281B50B86700A19F1F /* VerticalMustangImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VerticalMustangImage.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +69,9 @@
 			children = (
 				520F00031B4F85E40095B8B8 /* AppDelegate.swift */,
 				520F00051B4F85E40095B8B8 /* FirstViewController.swift */,
+				527291261B50B73000A19F1F /* WarThunderTitlePageImage.jpg */,
 				520F00091B4F85E40095B8B8 /* Main.storyboard */,
+				527291281B50B86700A19F1F /* VerticalMustangImage.jpg */,
 				520F000C1B4F85E40095B8B8 /* Images.xcassets */,
 				520F00281B4F918F0095B8B8 /* Bf109Image.jpg */,
 				520F000E1B4F85E40095B8B8 /* LaunchScreen.xib */,
@@ -208,7 +214,9 @@
 				520F000B1B4F85E40095B8B8 /* Main.storyboard in Resources */,
 				520F00101B4F85E40095B8B8 /* LaunchScreen.xib in Resources */,
 				520F00291B4F918F0095B8B8 /* Bf109Image.jpg in Resources */,
+				527291271B50B73000A19F1F /* WarThunderTitlePageImage.jpg in Resources */,
 				520F000D1B4F85E40095B8B8 /* Images.xcassets in Resources */,
+				527291291B50B86700A19F1F /* VerticalMustangImage.jpg in Resources */,
 				520F002B1B4FAD4A0095B8B8 /* BomberDarkImage.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  WarThunderCalculator
 //
-//  Created by John  De Angulo on 7/9/15.
+//  Created by Woohoopy on 7/9/15.
 //  Copyright (c) 2015 WooHops. All rights reserved.
 //
 

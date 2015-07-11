@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bf109Image.jpg" highlightedImage="Bf109Image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Sxr-8Z-hf8">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bf109Image.jpg" highlightedImage="Bf109Image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Sxr-8Z-hf8">
+                                <rect key="frame" x="0.0" y="-3" width="600" height="603"/>
                                 <color key="backgroundColor" red="0.92156862745098034" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <view alpha="0.95999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xtz-VF-7v8">
@@ -43,22 +43,22 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Vs-f4-O5R">
-                                        <rect key="frame" x="370" y="76" width="50" height="52"/>
+                                        <rect key="frame" x="388" y="76" width="50" height="52"/>
                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="38"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Rank" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSP-gG-jpf">
-                                        <rect key="frame" x="354" y="43" width="83" height="25"/>
+                                        <rect key="frame" x="372" y="43" width="83" height="25"/>
                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="18"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rz-5d-iRb">
-                                        <rect key="frame" x="377" y="189" width="37" height="41"/>
+                                        <rect key="frame" x="395" y="189" width="37" height="41"/>
                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="21"/>
                                         <state key="normal" title="Go!">
-                                            <color key="titleColor" red="0.78039215689999997" green="0.95686274510000002" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.7803921568627451" green="0.95686274509803926" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
@@ -99,7 +99,7 @@
                                     <constraint firstItem="2dq-r8-GK8" firstAttribute="leading" secondItem="fmC-Io-w1I" secondAttribute="leading" id="Kio-qN-4u1"/>
                                     <constraint firstItem="4Vs-f4-O5R" firstAttribute="centerX" secondItem="RSP-gG-jpf" secondAttribute="centerX" id="LPa-5b-WDd"/>
                                     <constraint firstItem="DXN-b7-N7U" firstAttribute="baseline" secondItem="fmC-Io-w1I" secondAttribute="baseline" id="LU4-qW-tw0"/>
-                                    <constraint firstAttribute="trailing" secondItem="RSP-gG-jpf" secondAttribute="trailing" constant="43" id="Ldi-Jt-9W5"/>
+                                    <constraint firstAttribute="trailing" secondItem="RSP-gG-jpf" secondAttribute="trailing" constant="25" id="Ldi-Jt-9W5"/>
                                     <constraint firstItem="RSP-gG-jpf" firstAttribute="baseline" secondItem="AF5-j0-ofs" secondAttribute="baseline" id="NCJ-ke-clC"/>
                                     <constraint firstItem="2dq-r8-GK8" firstAttribute="leading" secondItem="AF5-j0-ofs" secondAttribute="leading" id="Puz-Tl-Yva"/>
                                     <constraint firstItem="1Rz-5d-iRb" firstAttribute="baseline" secondItem="fmC-Io-w1I" secondAttribute="baseline" constant="-3" id="XK2-he-HKg"/>
@@ -123,14 +123,21 @@
                             <constraint firstItem="Xtz-VF-7v8" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" multiplier="0.8" id="HCf-PK-P7E"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Sxr-8Z-hf8" secondAttribute="bottom" id="jI6-PS-oVd"/>
                             <constraint firstItem="Sxr-8Z-hf8" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="rur-dR-fbd"/>
-                            <constraint firstItem="Sxr-8Z-hf8" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="tdO-m2-aDO"/>
+                            <constraint firstItem="Sxr-8Z-hf8" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="-20" id="tdO-m2-aDO"/>
                             <constraint firstAttribute="centerX" secondItem="Xtz-VF-7v8" secondAttribute="centerX" id="wel-iQ-6Fd"/>
+                            <constraint firstItem="Sxr-8Z-hf8" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="-67" id="xHr-bO-GwJ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="tdO-m2-aDO"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <navigationItem key="navigationItem" title="War Thunder Calculator" id="zmb-6V-zIM"/>
                     <connections>
                         <outlet property="goButton" destination="1Rz-5d-iRb" id="nf1-gD-4VT"/>
+                        <outlet property="nextButtonInputAccessoryView" destination="hn3-TI-02F" id="dnY-nT-Ek2"/>
                         <outlet property="planeOneBR" destination="Nga-JW-a6f" id="LAN-My-oqX"/>
                         <outlet property="planeThreeBR" destination="DXN-b7-N7U" id="QfO-Rx-SZS"/>
                         <outlet property="planeTwoBR" destination="AMn-sN-Mnf" id="eKM-tU-Mj0"/>
@@ -139,6 +146,32 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="hn3-TI-02F" userLabel="Input Accessory View">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Next" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lb-6w-bDf">
+                            <rect key="frame" x="282" y="11" width="40" height="25"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.7803921568627451" green="0.95686274509803926" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="6lb-6w-bDf" secondAttribute="centerX" id="GTo-vq-iDt"/>
+                        <constraint firstAttribute="centerY" secondItem="6lb-6w-bDf" secondAttribute="centerY" id="rYM-gG-kEi"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="PKt-Es-tek" appends="YES" id="qeT-7z-VRX"/>
+                    </connections>
+                </view>
+                <tapGestureRecognizer id="PKt-Es-tek">
+                    <connections>
+                        <action selector="userDidTapInputAccessoryView:" destination="9pv-A4-QxB" id="HnZ-KA-z1E"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="682" y="-283"/>
         </scene>
