@@ -75,7 +75,7 @@
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
                                         <connections>
-                                            <action selector="userDidTapButtonOne:" destination="9pv-A4-QxB" eventType="editingDidBegin" id="L6N-RN-zMA"/>
+                                            <action selector="userDidTapTextFieldOne:" destination="9pv-A4-QxB" eventType="editingDidBegin" id="hVi-Oq-VbC"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DXN-b7-N7U">
@@ -85,7 +85,7 @@
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="go"/>
                                         <connections>
-                                            <action selector="userDidTapButtonThree:" destination="9pv-A4-QxB" eventType="editingDidEnd" id="lGB-Re-Ka2"/>
+                                            <action selector="userDidTapTextFieldThree:" destination="9pv-A4-QxB" eventType="editingDidBegin" id="Zml-7C-XPS"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AMn-sN-Mnf">
@@ -95,7 +95,7 @@
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
                                         <connections>
-                                            <action selector="userDidTapButtonTwo:" destination="9pv-A4-QxB" eventType="editingDidBegin" id="eOg-Xk-Wfd"/>
+                                            <action selector="userDidTapTextFieldTwo:" destination="9pv-A4-QxB" eventType="editingDidBegin" id="xzv-kc-akm"/>
                                         </connections>
                                     </textField>
                                 </subviews>

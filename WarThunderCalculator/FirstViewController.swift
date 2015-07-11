@@ -163,15 +163,14 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    @IBAction func userDidTapButtonOne(sender: UITextField) {
+    @IBAction func userDidTapTextFieldOne(sender: UITextField) {
         nextLabel.text = "Next"
     }
     
-    @IBAction func userDidTapButtonTwo(sender: AnyObject) {
+    @IBAction func userDidTapTextFieldTwo(sender: UITextField) {
         nextLabel.text = "Next"
     }
-    
-    @IBAction func userDidTapButtonThree(sender: UITextField) {
+    @IBAction func userDidTapTextFieldThree(sender: UITextField) {
         nextLabel.text = "Go!"
     }
 
