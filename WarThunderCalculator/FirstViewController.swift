@@ -14,7 +14,28 @@ extension String {
     }
 }
 
+struct Constants {
+    static let kNextButtonAcessoryInputAccessoryViewHeight: CGFloat = 44
+}
+
+extension UIResponder {
+    
+    private weak static var _currentFirstResponder: UIResponder? = nil
+    
+    public class func currentFirstResponder() -> UIResponder? {
+        UIResponder._currentFirstResponder = nil
+        UIApplication.sharedApplication().sendAction("findFirstResponder:", to: nil, from: nil, forEvent: nil)
+        return UIResponder._currentFirstResponder
+    }
+    
+    internal func findFirstResponder(sender: AnyObject) {
+        UIResponder._currentFirstResponder = self
+    }
+}
+
 class FirstViewController: UIViewController, UITextFieldDelegate {
+    
+    @IBOutlet var nextButtonInputAccessoryView: UIView!
     
     @IBOutlet weak var goButton: UIButton!
     @IBOutlet weak var planeOneBR: UITextField!
@@ -33,6 +54,14 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         planeOneBR.delegate = self
         planeTwoBR.delegate = self
         planeThreeBR.delegate = self
+        
+        planeOneBR.inputAccessoryView = nextButtonInputAccessoryView
+        planeTwoBR.inputAccessoryView = nextButtonInputAccessoryView
+        planeThreeBR.inputAccessoryView = nextButtonInputAccessoryView
+    }
+    
+    override func viewWillLayoutSubviews() {
+        nextButtonInputAccessoryView.frame = CGRect(x: 0, y: 0, width: CGRectGetWidth(view.bounds), height: Constants.kNextButtonAcessoryInputAccessoryViewHeight)
     }
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
@@ -52,29 +81,22 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
             let isNumeric = scanner.scanDecimal(nil) && scanner.atEnd
             
             return isNumeric
-            
         } else {
             // To allow for an empty text field
             return true
         }
     }
+    
+    @IBAction func userDidTapInputAccessoryView(sender: AnyObject) {
 
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        //Responds to user textbox data entry
-        if textField == planeOneBR {
+        if UIResponder.currentFirstResponder() == planeOneBR {
             planeTwoBR.becomeFirstResponder()
-            return false;
-        }
-        if textField == planeTwoBR {
+        } else if UIResponder.currentFirstResponder() == planeTwoBR {
             planeThreeBR.becomeFirstResponder()
-            return false;
-        }
-        if textField == planeThreeBR {
+        } else if UIResponder.currentFirstResponder() == planeThreeBR {
             planeThreeBR.resignFirstResponder()
             goButtonDidClick(goButton)
-            return true;
         }
-        return true;
     }
 
     @IBAction func goButtonDidClick(sender: UIButton) {
