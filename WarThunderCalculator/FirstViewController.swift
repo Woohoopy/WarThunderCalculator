@@ -14,6 +14,19 @@ extension String {
     }
 }
 
+// Provides extension to use HEX values for UIColor as opposed to simply RGB
+extension UIColor {
+    convenience init(red: Int, green: Int, blue: Int) {
+        assert(red >= 0 && red <= 255, "Invalid red component")
+        assert(green >= 0 && green <= 255, "Invalid green component")
+        assert(blue >= 0 && blue <= 255, "Invalid blue component")
+        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
+    }
+    convenience init(netHex:Int) {
+        self.init(red:(netHex >> 16) & 0xff, green:(netHex >> 8) & 0xff, blue:netHex & 0xff)
+    }
+}
+
 struct Constants {
     static let kNextButtonAcessoryInputAccessoryViewHeight: CGFloat = 44
 }
@@ -58,6 +71,13 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         planeOneBR.inputAccessoryView = nextButtonInputAccessoryView
         planeTwoBR.inputAccessoryView = nextButtonInputAccessoryView
         planeThreeBR.inputAccessoryView = nextButtonInputAccessoryView
+        
+        // Change style of UI Navigation Controller
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        self.navigationController!.navigationBar.backgroundColor = UIColor.clearColor().colorWithAlphaComponent(0.4)
+        self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Avenir-Light", size: 19)!,NSForegroundColorAttributeName : UIColor.whiteColor()]
+        // self.navigationController!.navigationBar.shadowImage = UIImage()
+        
     }
     
     override func viewWillLayoutSubviews() {

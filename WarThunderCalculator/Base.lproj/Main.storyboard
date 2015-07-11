@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bf109Image.jpg" highlightedImage="Bf109Image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Sxr-8Z-hf8">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="-3" width="600" height="603"/>
                                 <color key="backgroundColor" red="0.92156862745098034" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <view alpha="0.95999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xtz-VF-7v8">
@@ -123,9 +123,15 @@
                             <constraint firstItem="Xtz-VF-7v8" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" multiplier="0.8" id="HCf-PK-P7E"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Sxr-8Z-hf8" secondAttribute="bottom" id="jI6-PS-oVd"/>
                             <constraint firstItem="Sxr-8Z-hf8" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="rur-dR-fbd"/>
-                            <constraint firstItem="Sxr-8Z-hf8" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="tdO-m2-aDO"/>
+                            <constraint firstItem="Sxr-8Z-hf8" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="-20" id="tdO-m2-aDO"/>
                             <constraint firstAttribute="centerX" secondItem="Xtz-VF-7v8" secondAttribute="centerX" id="wel-iQ-6Fd"/>
+                            <constraint firstItem="Sxr-8Z-hf8" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="-67" id="xHr-bO-GwJ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="tdO-m2-aDO"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <navigationItem key="navigationItem" title="War Thunder Calculator" id="zmb-6V-zIM"/>
