@@ -118,7 +118,8 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     }
     
     func animateTextField(up: Bool) {
-        var movement = (up ? -kbHeight : kbHeight)
+        // '-160' Value fine tunes the degree to which the applications scrolls
+        var movement = (up ? -(kbHeight-160) : kbHeight-160)
         
         UIView.animateWithDuration(0.3, animations: {
             self.view.frame = CGRectOffset(self.view.frame, 0, movement)
