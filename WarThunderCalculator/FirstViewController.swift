@@ -2,7 +2,7 @@
 //  FirstViewController.swift
 //  WarThunderCalculator
 //
-//  Created by John  De Angulo on 7/9/15.
+//  Created by Woohoopy on 7/9/15.
 //  Copyright (c) 2015 WooHops. All rights reserved.
 //
 
@@ -77,6 +77,7 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         self.navigationController!.navigationBar.backgroundColor = UIColor.clearColor().colorWithAlphaComponent(0.4)
         self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Avenir-Light", size: 19)!,NSForegroundColorAttributeName : UIColor.whiteColor()]
         // self.navigationController!.navigationBar.shadowImage = UIImage()
+        
         // Sets battery and time text to white
         self.navigationController!.navigationBar.barStyle = UIBarStyle.Black
         
