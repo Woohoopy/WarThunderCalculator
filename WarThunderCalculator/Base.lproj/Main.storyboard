@@ -74,6 +74,9 @@
                                         <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                        <connections>
+                                            <action selector="userDidTapButtonOne:" destination="9pv-A4-QxB" eventType="editingDidBegin" id="L6N-RN-zMA"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DXN-b7-N7U">
                                         <rect key="frame" x="125" y="200" width="45" height="30"/>
@@ -81,6 +84,9 @@
                                         <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="go"/>
+                                        <connections>
+                                            <action selector="userDidTapButtonThree:" destination="9pv-A4-QxB" eventType="editingDidEnd" id="lGB-Re-Ka2"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AMn-sN-Mnf">
                                         <rect key="frame" x="125" y="120" width="45" height="30"/>
@@ -88,6 +94,9 @@
                                         <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                        <connections>
+                                            <action selector="userDidTapButtonTwo:" destination="9pv-A4-QxB" eventType="editingDidBegin" id="eOg-Xk-Wfd"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
@@ -138,6 +147,7 @@
                     <connections>
                         <outlet property="goButton" destination="1Rz-5d-iRb" id="nf1-gD-4VT"/>
                         <outlet property="nextButtonInputAccessoryView" destination="hn3-TI-02F" id="dnY-nT-Ek2"/>
+                        <outlet property="nextLabel" destination="6lb-6w-bDf" id="Xgx-dm-Oxm"/>
                         <outlet property="planeOneBR" destination="Nga-JW-a6f" id="LAN-My-oqX"/>
                         <outlet property="planeThreeBR" destination="DXN-b7-N7U" id="QfO-Rx-SZS"/>
                         <outlet property="planeTwoBR" destination="AMn-sN-Mnf" id="eKM-tU-Mj0"/>

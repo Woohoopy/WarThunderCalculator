@@ -49,6 +49,7 @@ extension UIResponder {
 class FirstViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var nextButtonInputAccessoryView: UIView!
+    @IBOutlet weak var nextLabel: UILabel!
     
     @IBOutlet weak var goButton: UIButton!
     @IBOutlet weak var planeOneBR: UITextField!
@@ -115,12 +116,26 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
 
         if UIResponder.currentFirstResponder() == planeOneBR {
             planeTwoBR.becomeFirstResponder()
+            nextLabel.text = "Next"
         } else if UIResponder.currentFirstResponder() == planeTwoBR {
             planeThreeBR.becomeFirstResponder()
+            nextLabel.text = "Go!"
         } else if UIResponder.currentFirstResponder() == planeThreeBR {
             planeThreeBR.resignFirstResponder()
             goButtonDidClick(goButton)
         }
+    }
+    
+    @IBAction func userDidTapButtonOne(sender: UITextField) {
+        nextLabel.text = "Next"
+    }
+    
+    @IBAction func userDidTapButtonTwo(sender: AnyObject) {
+        nextLabel.text = "Next"
+    }
+    
+    @IBAction func userDidTapButtonThree(sender: UITextField) {
+        nextLabel.text = "Go!"
     }
 
     @IBAction func goButtonDidClick(sender: UIButton) {
