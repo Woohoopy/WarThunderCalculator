@@ -74,6 +74,9 @@
                                         <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                        <connections>
+                                            <action selector="userDidTapTextFieldOne:" destination="9pv-A4-QxB" eventType="editingDidBegin" id="hVi-Oq-VbC"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DXN-b7-N7U">
                                         <rect key="frame" x="125" y="200" width="45" height="30"/>
@@ -81,6 +84,9 @@
                                         <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="go"/>
+                                        <connections>
+                                            <action selector="userDidTapTextFieldThree:" destination="9pv-A4-QxB" eventType="editingDidBegin" id="Zml-7C-XPS"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AMn-sN-Mnf">
                                         <rect key="frame" x="125" y="120" width="45" height="30"/>
@@ -88,7 +94,16 @@
                                         <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                        <connections>
+                                            <action selector="userDidTapTextFieldTwo:" destination="9pv-A4-QxB" eventType="editingDidBegin" id="xzv-kc-akm"/>
+                                        </connections>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter Top 3 Battle Ratings:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOX-UM-9B6">
+                                        <rect key="frame" x="16" y="15" width="259" height="29"/>
+                                        <fontDescription key="fontDescription" name="Avenir-MediumOblique" family="Avenir" pointSize="21"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -100,11 +115,13 @@
                                     <constraint firstItem="4Vs-f4-O5R" firstAttribute="centerX" secondItem="RSP-gG-jpf" secondAttribute="centerX" id="LPa-5b-WDd"/>
                                     <constraint firstItem="DXN-b7-N7U" firstAttribute="baseline" secondItem="fmC-Io-w1I" secondAttribute="baseline" id="LU4-qW-tw0"/>
                                     <constraint firstAttribute="trailing" secondItem="RSP-gG-jpf" secondAttribute="trailing" constant="25" id="Ldi-Jt-9W5"/>
+                                    <constraint firstItem="Nga-JW-a6f" firstAttribute="top" secondItem="kOX-UM-9B6" secondAttribute="bottom" constant="15" id="N7V-zf-Mhu"/>
                                     <constraint firstItem="RSP-gG-jpf" firstAttribute="baseline" secondItem="AF5-j0-ofs" secondAttribute="baseline" id="NCJ-ke-clC"/>
                                     <constraint firstItem="2dq-r8-GK8" firstAttribute="leading" secondItem="AF5-j0-ofs" secondAttribute="leading" id="Puz-Tl-Yva"/>
                                     <constraint firstItem="1Rz-5d-iRb" firstAttribute="baseline" secondItem="fmC-Io-w1I" secondAttribute="baseline" constant="-3" id="XK2-he-HKg"/>
                                     <constraint firstItem="2dq-r8-GK8" firstAttribute="leading" secondItem="Xtz-VF-7v8" secondAttribute="leading" constant="16" id="YUc-K6-pUc"/>
                                     <constraint firstAttribute="centerY" secondItem="2dq-r8-GK8" secondAttribute="centerY" id="bBb-Iy-bfU"/>
+                                    <constraint firstItem="kOX-UM-9B6" firstAttribute="leading" secondItem="AF5-j0-ofs" secondAttribute="leading" id="bnX-3W-5w1"/>
                                     <constraint firstItem="Nga-JW-a6f" firstAttribute="trailing" secondItem="AMn-sN-Mnf" secondAttribute="trailing" id="gua-Nw-TLO"/>
                                     <constraint firstItem="Nga-JW-a6f" firstAttribute="leading" secondItem="AMn-sN-Mnf" secondAttribute="leading" id="jox-be-zgL"/>
                                     <constraint firstItem="Nga-JW-a6f" firstAttribute="trailing" secondItem="DXN-b7-N7U" secondAttribute="trailing" id="sGP-cT-q7b"/>
@@ -138,6 +155,7 @@
                     <connections>
                         <outlet property="goButton" destination="1Rz-5d-iRb" id="nf1-gD-4VT"/>
                         <outlet property="nextButtonInputAccessoryView" destination="hn3-TI-02F" id="dnY-nT-Ek2"/>
+                        <outlet property="nextLabel" destination="6lb-6w-bDf" id="Xgx-dm-Oxm"/>
                         <outlet property="planeOneBR" destination="Nga-JW-a6f" id="LAN-My-oqX"/>
                         <outlet property="planeThreeBR" destination="DXN-b7-N7U" id="QfO-Rx-SZS"/>
                         <outlet property="planeTwoBR" destination="AMn-sN-Mnf" id="eKM-tU-Mj0"/>

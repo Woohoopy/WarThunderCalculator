@@ -49,6 +49,7 @@ extension UIResponder {
 class FirstViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var nextButtonInputAccessoryView: UIView!
+    @IBOutlet weak var nextLabel: UILabel!
     
     @IBOutlet weak var goButton: UIButton!
     @IBOutlet weak var planeOneBR: UITextField!
@@ -56,6 +57,8 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var planeThreeBR: UITextField!
     @IBOutlet weak var totalRankLabel: UILabel!
     @IBOutlet weak var totalRankNumberLabel: UILabel!
+    
+    var kbHeight: CGFloat!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,6 +91,41 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         nextButtonInputAccessoryView.frame = CGRect(x: 0, y: 0, width: CGRectGetWidth(view.bounds), height: Constants.kNextButtonAcessoryInputAccessoryViewHeight)
     }
     
+    override func viewWillAppear(animated:Bool) {
+        super.viewWillAppear(animated)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification, object: nil)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        if let userInfo = notification.userInfo {
+            if let keyboardSize =  (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
+                kbHeight = keyboardSize.height
+                self.animateTextField(true)
+            }
+        }
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        self.animateTextField(false)
+    }
+    
+    func animateTextField(up: Bool) {
+        // '-160' Value fine tunes the degree to which the applications scrolls
+        var movement = (up ? -(kbHeight-160) : kbHeight-160)
+        
+        UIView.animateWithDuration(0.3, animations: {
+            self.view.frame = CGRectOffset(self.view.frame, 0, movement)
+        })
+    }
+    
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         // Hide the total rank labels when the user is inputting new data
         totalRankLabel.hidden = true
@@ -112,15 +150,27 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func userDidTapInputAccessoryView(sender: AnyObject) {
-
         if UIResponder.currentFirstResponder() == planeOneBR {
             planeTwoBR.becomeFirstResponder()
+            nextLabel.text = "Next"
         } else if UIResponder.currentFirstResponder() == planeTwoBR {
             planeThreeBR.becomeFirstResponder()
+            nextLabel.text = "Go!"
         } else if UIResponder.currentFirstResponder() == planeThreeBR {
             planeThreeBR.resignFirstResponder()
             goButtonDidClick(goButton)
         }
+    }
+    
+    @IBAction func userDidTapTextFieldOne(sender: UITextField) {
+        nextLabel.text = "Next"
+    }
+    
+    @IBAction func userDidTapTextFieldTwo(sender: UITextField) {
+        nextLabel.text = "Next"
+    }
+    @IBAction func userDidTapTextFieldThree(sender: UITextField) {
+        nextLabel.text = "Go!"
     }
 
     @IBAction func goButtonDidClick(sender: UIButton) {

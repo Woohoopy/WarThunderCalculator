@@ -10,7 +10,7 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WarThunderTitlePageImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qDI-Wh-ia4">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CoverImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qDI-Wh-ia4">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="240" id="CsJ-22-4TH"/>
@@ -47,6 +47,6 @@
         </view>
     </objects>
     <resources>
-        <image name="WarThunderTitlePageImage.jpg" width="3508" height="4756"/>
+        <image name="CoverImage.jpg" width="3508" height="4756"/>
     </resources>
 </document>
