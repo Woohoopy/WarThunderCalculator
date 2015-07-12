@@ -150,7 +150,6 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func userDidTapInputAccessoryView(sender: AnyObject) {
-
         if UIResponder.currentFirstResponder() == planeOneBR {
             planeTwoBR.becomeFirstResponder()
             nextLabel.text = "Next"
