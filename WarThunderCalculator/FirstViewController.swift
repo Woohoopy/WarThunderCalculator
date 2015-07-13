@@ -83,8 +83,6 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         
         // Sets battery and time text to white
         self.navigationController!.navigationBar.barStyle = UIBarStyle.Black
-        
-        
     }
     
     override func viewWillLayoutSubviews() {
@@ -194,7 +192,7 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         
         var total = (brs[2] / 2) + (brs[0] + brs[1]) / 4
         
-        totalRankLabel.text = "Total Rank"
+        //totalRankLabel.text = "Total Rank"
         totalRankNumberLabel.text=("\(total)")
         
         totalRankLabel.hidden = false
