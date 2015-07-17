@@ -21,6 +21,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bf109Image.jpg" highlightedImage="Bf109Image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Sxr-8Z-hf8">
                                 <rect key="frame" x="0.0" y="-3" width="600" height="603"/>
                                 <color key="backgroundColor" red="0.92156862745098034" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
                             </imageView>
                             <view alpha="0.95999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xtz-VF-7v8">
                                 <rect key="frame" x="30" y="165" width="540" height="270"/>
@@ -90,6 +91,22 @@
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="centerY" secondItem="kOX-UM-9B6" secondAttribute="centerY" constant="0.5" id="kGG-M7-wHP"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wO1-eD-1lV">
+                                        <rect key="frame" x="16" y="68" width="25" height="55"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="m04-YW-NRS"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfv-H2-1Uw">
+                                        <rect key="frame" x="16" y="147" width="25" height="55"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="15S-Ky-lXW"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EIM-v4-9Ja">
@@ -168,22 +185,6 @@
                                                 <include reference="vY3-af-ozY"/>
                                             </mask>
                                         </variation>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wO1-eD-1lV">
-                                        <rect key="frame" x="16" y="68" width="25" height="55"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="25" id="m04-YW-NRS"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfv-H2-1Uw">
-                                        <rect key="frame" x="16" y="147" width="25" height="55"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="25" id="15S-Ky-lXW"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
@@ -290,6 +291,10 @@
                                 <exclude reference="tdO-m2-aDO"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="5um-Eh-jML" appends="YES" id="BEe-4g-nc0"/>
+                            <outletCollection property="gestureRecognizers" destination="tbj-gs-sjw" appends="YES" id="8d1-I3-Zmd"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="War Thunder Calculator" id="zmb-6V-zIM"/>
                     <connections>
@@ -330,8 +335,18 @@
                         <action selector="userDidTapInputAccessoryView:" destination="9pv-A4-QxB" id="HnZ-KA-z1E"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="5um-Eh-jML" userLabel="Background Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="userDidInteractWithBackground:" destination="9pv-A4-QxB" id="6R0-Dt-mnR"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="tbj-gs-sjw" userLabel="Background Pan Gesture Recognizer">
+                    <connections>
+                        <action selector="userDidInteractWithBackground:" destination="9pv-A4-QxB" id="cbQ-xL-aGb"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="681" y="-283"/>
+            <point key="canvasLocation" x="607" y="-283"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZHG-Ej-MZS">
