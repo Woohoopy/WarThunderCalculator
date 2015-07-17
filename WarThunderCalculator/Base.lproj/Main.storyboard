@@ -80,8 +80,8 @@
                                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qd1-Ld-Vm2">
                                         <rect key="frame" x="0.0" y="0.0" width="540" height="42"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Top 3 Battle Ratings:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOX-UM-9B6">
-                                                <rect key="frame" x="16" y="6" width="255" height="29"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Top 3 Battle Ratings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOX-UM-9B6">
+                                                <rect key="frame" x="146" y="6" width="249" height="29"/>
                                                 <fontDescription key="fontDescription" name="Avenir-MediumOblique" family="Avenir" pointSize="21"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -90,7 +90,8 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="centerY" secondItem="kOX-UM-9B6" secondAttribute="centerY" constant="0.5" id="kGG-M7-wHP"/>
+                                            <constraint firstAttribute="centerX" secondItem="kOX-UM-9B6" secondAttribute="centerX" id="hgC-Eg-2xz"/>
+                                            <constraint firstAttribute="centerY" secondItem="kOX-UM-9B6" secondAttribute="centerY" id="kGG-M7-wHP"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wO1-eD-1lV">
@@ -252,6 +253,7 @@
                                         <exclude reference="pbb-Gl-eEF"/>
                                         <exclude reference="q9X-ZX-a2n"/>
                                         <exclude reference="rNE-vd-jZE"/>
+                                        <exclude reference="K80-0R-uGA"/>
                                         <exclude reference="oza-yh-xSf"/>
                                         <exclude reference="6GB-gg-Jw8"/>
                                         <exclude reference="YAc-i1-eT4"/>
