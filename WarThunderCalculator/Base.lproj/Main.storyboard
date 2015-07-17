@@ -96,7 +96,7 @@
                                         <rect key="frame" x="170" y="42" width="370" height="188"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSP-gG-jpf">
-                                                <rect key="frame" x="144" y="8" width="83" height="19"/>
+                                                <rect key="frame" x="144" y="0.0" width="83" height="25"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Total Rank">
                                                         <attributes>
@@ -110,7 +110,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Vs-f4-O5R">
-                                                <rect key="frame" x="160" y="35" width="50" height="52"/>
+                                                <rect key="frame" x="160" y="33" width="50" height="52"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="38"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -145,11 +145,13 @@
                                                 <variation key="widthClass=compact" constant="0.0"/>
                                             </constraint>
                                             <constraint firstAttribute="centerX" secondItem="1Rz-5d-iRb" secondAttribute="centerX" id="WfT-ao-l0h"/>
+                                            <constraint firstItem="RSP-gG-jpf" firstAttribute="top" secondItem="EIM-v4-9Ja" secondAttribute="top" id="ksL-um-K2b"/>
                                             <constraint firstItem="RSP-gG-jpf" firstAttribute="top" secondItem="EIM-v4-9Ja" secondAttribute="top" constant="8" id="mx3-Bj-6xu"/>
                                             <constraint firstItem="1Rz-5d-iRb" firstAttribute="top" secondItem="4Vs-f4-O5R" secondAttribute="bottom" constant="38" id="vY3-af-ozY"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
+                                                <exclude reference="5D9-DC-1WR"/>
                                                 <exclude reference="BZA-sH-dDU"/>
                                                 <exclude reference="mx3-Bj-6xu"/>
                                                 <exclude reference="1UV-mK-BKz"/>
@@ -203,6 +205,7 @@
                                     <constraint firstItem="2dq-r8-GK8" firstAttribute="leading" secondItem="fmC-Io-w1I" secondAttribute="leading" id="Kio-qN-4u1"/>
                                     <constraint firstItem="DXN-b7-N7U" firstAttribute="baseline" secondItem="fmC-Io-w1I" secondAttribute="baseline" id="LU4-qW-tw0"/>
                                     <constraint firstItem="1Rz-5d-iRb" firstAttribute="top" secondItem="DXN-b7-N7U" secondAttribute="top" id="NNM-Du-Zr1"/>
+                                    <constraint firstItem="RSP-gG-jpf" firstAttribute="top" secondItem="qd1-Ld-Vm2" secondAttribute="bottom" constant="2" id="Nj3-YX-7H0"/>
                                     <constraint firstItem="wO1-eD-1lV" firstAttribute="top" secondItem="AF5-j0-ofs" secondAttribute="bottom" id="Ooc-vt-XXb"/>
                                     <constraint firstItem="lfv-H2-1Uw" firstAttribute="height" secondItem="Xtz-VF-7v8" secondAttribute="height" multiplier="0.203" id="PM8-RL-Ysg"/>
                                     <constraint firstItem="EIM-v4-9Ja" firstAttribute="bottom" secondItem="DXN-b7-N7U" secondAttribute="bottom" id="PV8-Sm-p1T"/>
@@ -225,6 +228,7 @@
                                     <constraint firstItem="Nga-JW-a6f" firstAttribute="leading" secondItem="AMn-sN-Mnf" secondAttribute="leading" id="jox-be-zgL"/>
                                     <constraint firstItem="wO1-eD-1lV" firstAttribute="height" secondItem="Xtz-VF-7v8" secondAttribute="height" multiplier="0.203" id="kKQ-XO-Lad"/>
                                     <constraint firstAttribute="trailing" secondItem="EIM-v4-9Ja" secondAttribute="trailing" id="nuE-hM-0hc"/>
+                                    <constraint firstItem="AF5-j0-ofs" firstAttribute="bottom" secondItem="RSP-gG-jpf" secondAttribute="bottom" constant="-1" id="oza-yh-xSf"/>
                                     <constraint firstAttribute="width" secondItem="qd1-Ld-Vm2" secondAttribute="height" multiplier="180:19" id="pbb-Gl-eEF"/>
                                     <constraint firstItem="EIM-v4-9Ja" firstAttribute="top" secondItem="qd1-Ld-Vm2" secondAttribute="bottom" id="ppb-Yq-Hpf"/>
                                     <constraint firstAttribute="width" secondItem="qd1-Ld-Vm2" secondAttribute="width" id="q9X-ZX-a2n"/>
@@ -247,6 +251,7 @@
                                         <exclude reference="pbb-Gl-eEF"/>
                                         <exclude reference="q9X-ZX-a2n"/>
                                         <exclude reference="rNE-vd-jZE"/>
+                                        <exclude reference="oza-yh-xSf"/>
                                         <exclude reference="6GB-gg-Jw8"/>
                                         <exclude reference="YAc-i1-eT4"/>
                                         <exclude reference="4o7-tj-8oL"/>
@@ -255,6 +260,8 @@
                                         <exclude reference="tY1-7q-Ocv"/>
                                         <exclude reference="z5F-rj-2b6"/>
                                         <exclude reference="tJa-vj-IS4"/>
+                                        <exclude reference="1sZ-SN-lhi"/>
+                                        <exclude reference="Nj3-YX-7H0"/>
                                         <exclude reference="spb-I6-Mf8"/>
                                         <exclude reference="xbU-6j-BA5"/>
                                         <exclude reference="NNM-Du-Zr1"/>

@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>9B4CCA6B-728C-44EF-A2AF-F8FB388244A3</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>WarThunderCalculator</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>687B61C6A16A13D6A1770C7144FC74FE85BFEFDC</key>
 		<string>https://github.com/Woohoopy/WarThunderCalculator.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>WarThunderCalculator.xcodeproj/project.xcworkspace</string>
+	<string>WarThunderCalculator.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>687B61C6A16A13D6A1770C7144FC74FE85BFEFDC</key>
