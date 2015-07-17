@@ -96,6 +96,8 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification, object: nil)
     }
     
+   
+    
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         
@@ -167,8 +169,13 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     @IBAction func userDidTapTextFieldTwo(sender: UITextField) {
         nextLabel.text = "Next"
     }
+    
     @IBAction func userDidTapTextFieldThree(sender: UITextField) {
         nextLabel.text = "Go!"
+    }
+    
+    @IBAction func userDidInteractWithBackground(sender: AnyObject) {
+        self.view.endEditing(true)
     }
 
     @IBAction func goButtonDidClick(sender: UIButton) {
