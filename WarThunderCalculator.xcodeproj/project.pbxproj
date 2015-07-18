@@ -39,7 +39,7 @@
 		520F001A1B4F85E40095B8B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		520F001B1B4F85E40095B8B8 /* WarThunderCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarThunderCalculatorTests.swift; sourceTree = "<group>"; };
 		520F00281B4F918F0095B8B8 /* Bf109Image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bf109Image.jpg; sourceTree = "<group>"; };
-		520FFFFE1B4F85E40095B8B8 /* WarThunderCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarThunderCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		520FFFFE1B4F85E40095B8B8 /* WT Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WT Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +112,7 @@
 		520FFFFF1B4F85E40095B8B8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				520FFFFE1B4F85E40095B8B8 /* WarThunderCalculator.app */,
+				520FFFFE1B4F85E40095B8B8 /* WT Calculator.app */,
 				520F00151B4F85E40095B8B8 /* WarThunderCalculatorTests.xctest */,
 			);
 			name = Products;
@@ -153,7 +153,7 @@
 			);
 			name = WarThunderCalculator;
 			productName = WarThunderCalculator;
-			productReference = 520FFFFE1B4F85E40095B8B8 /* WarThunderCalculator.app */;
+			productReference = 520FFFFE1B4F85E40095B8B8 /* WT Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -396,9 +396,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WarThunderCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "WT Calculator";
 			};
 			name = Debug;
 		};
@@ -406,9 +407,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WarThunderCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "WT Calculator";
 			};
 			name = Release;
 		};
